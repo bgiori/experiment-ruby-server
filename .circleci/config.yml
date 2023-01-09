@@ -20,6 +20,9 @@ jobs:
       - run:
           name: "test"
           command: "bundle exec rake"
+      - run:
+          name: "local test"
+          command: "ruby test.rb"
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
