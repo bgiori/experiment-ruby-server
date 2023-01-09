@@ -21,6 +21,9 @@ jobs:
           name: "test"
           command: "bundle exec rake"
       - run:
+          name: "install exp"
+          command: "gem install amplitude-experiment"
+      - run:
           name: "local test"
           command: "ruby test.rb"
 
